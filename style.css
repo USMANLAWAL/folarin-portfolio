@@ -82,3 +82,20 @@
     background-color: #808080;
     text-align: center;
 }
+
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #1f1f1f; /* Dark navbar */
+  }
+  
+  body.dark-mode .card {
+    background-color: #2a2a2a; /* Dark card background */
+    color: #ffffff; /* Light card text */
+  }
+  
+  /* Add other dark mode styles as needed */
+  
