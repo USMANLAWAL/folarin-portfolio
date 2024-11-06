@@ -34,10 +34,6 @@
 #contact {
     padding-bottom: 4rem;
 }
-/* about section image css */
-.imageAboutPage {
-    width: 100%;
-}
 
 /* services section css */
 .servicesText.card {
@@ -59,12 +55,65 @@
     border: 1px solid #008000;
 }
 
-
-.Aboutme{
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
-  padding: 25px;
-  margin: 8px;
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+.about-text {
+    flex: 2;
+    padding: 25px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.about-text h1 {
+    margin-top: 0;
+    font-size: 38px;
+    font-weight: bolder;
+    color: #333;
+}
+
+.about-text p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+.Aboutme {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    margin: 8px;
+    background-color: #ffffff;
+  }
+  
+  /* Dark Mode for About Me Section */
+  /* .dark-mode.about-container {
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.2);
+  } */
+  
+  .dark-mode .about-content h1 {
+    color: #ffffff;
+  }
+  
+  .dark-mode .about-content p {
+    color: #ffffff;
+  }
+
 
 /* social media icons styling */
 .social-icons {
@@ -81,4 +130,33 @@
 #footer {
     background-color: #808080;
     text-align: center;
+}
+
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #1f1f1f; /* Dark navbar */
+  }
+  
+  body.dark-mode .card {
+    background-color: #2a2a2a; /* Dark card background */
+    color: #ffffff; /* Light card text */
+  }
+  
+  /* Add other dark mode styles as needed */
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 250px; /* Adjust size as needed */
+    border-radius: 8px; /* Adds a bit of rounded corners */
 }

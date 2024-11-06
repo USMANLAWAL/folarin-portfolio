@@ -17,3 +17,23 @@ const menuToggle = document.getElementById('navbarSupportedContent')
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })
+
+
+  // Dark mode toggle function
+const toggleButton = document.getElementById('toggle-button');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+
+  // Change button text based on mode
+  if (body.classList.contains('dark-mode')) {
+    toggleButton.textContent = 'Light Mode';
+    toggleButton.classList.remove('btn-light');
+    toggleButton.classList.add('btn-dark');
+  } else {
+    toggleButton.textContent = 'Dark Mode';
+    toggleButton.classList.remove('btn-dark');
+    toggleButton.classList.add('btn-light');
+  }
+});
