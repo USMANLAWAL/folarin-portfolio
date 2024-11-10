@@ -50,7 +50,7 @@
 /* services section css */
 
 .servicesText.card {
-    height: 100%; /* Ensures all cards have equal height */
+    height: 80%; /* Ensures all cards have equal height */
     width: 100%; /* Let the grid handle the width */
     display: flex;
     flex-direction: column;
@@ -63,10 +63,9 @@
 }
   
 
-.servicesIcon {
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
+.card-body img {
+    margin-left: 95px;
+    margin-bottom: 8px;
 }
 
 .card-title {
@@ -76,6 +75,11 @@
 }
 
 .card-text {
+    font-size: 11px;
+    text-align: left;
+}
+
+.app-text {
     font-size: 13px;
     text-align: center;
 }
