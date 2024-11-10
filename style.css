@@ -39,38 +39,61 @@
 
 
 /* spacing on all sections */
-/* #about, #services, #portfolio, #contact {
-    margin-top: 4rem;
+#about, #services, #Projects, #Tools {
+    margin-top: 0rem;
     padding-top: 4rem;
-} */
+}
 #contact {
     padding-bottom: 4rem;
 }
 
 /* services section css */
+
 .servicesText.card {
-    height: 280px;
-    cursor: pointer;
-  }
+    height: 100%; /* Ensures all cards have equal height */
+    width: 100%; /* Let the grid handle the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+  
+
 .servicesIcon {
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     width: 100%;
 }
+
 .card-title {
     text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+.card-text {
+    font-size: 13px;
+    text-align: center;
+}
+
 .card:hover .servicesIcon {
     color: #008000;
 }
+
 .servicesText:hover {
     border: 1px solid #008000;
 }
+
 
 #about {
     display: flex;
     justify-content: center;
     padding: 40px;
+    margin-bottom: 2px;
 }
 
 .about-container {
@@ -78,11 +101,9 @@
     align-items: center;
     max-width: 1500px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: 15px;
     overflow: hidden;
 }
-
-
 
 .about-text {
     flex: 2;
@@ -95,7 +116,6 @@
     margin-top: 0;
     font-size: 38px;
     font-weight: bolder;
-    color: #333;
 }
 
 .about-text p {
@@ -104,19 +124,13 @@
 }
 
 
-.Aboutme {
+/* .Aboutme {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
     padding: 25px;
     margin: 8px;
     background-color: #ffffff;
   }
-  
-  /* Dark Mode for About Me Section */
-  /* .dark-mode.about-container {
-    background-color: #333333;
-    color: #ffffff;
-    box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.2);
-  } */
+   */
   
   .dark-mode .about-content h1 {
     color: #ffffff;
@@ -168,7 +182,7 @@ body.dark-mode {
 }
 
 .about-image img {
-    width: 100%;
+    width: 700px;
     height: 500px;
     margin-top: 50px;
     max-width: 300px; /* Adjust size as needed */
@@ -193,7 +207,7 @@ body.dark-mode {
     background-color: rgb(255, 255, 255);
     width: 150px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 12px;
     text-decoration: none;
     text-align: center;
     color: #000000;
@@ -244,4 +258,64 @@ body.dark-mode {
         top: 12%; /* Adjust top position as needed */
         margin-bottom: 400px !important;
     }
+}
+
+/* Adjust "About Me" section layout for mobile */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .about-image {
+        order: -1; /* Move image to the top */
+        display: flex;
+        justify-content: center;
+    }
+    .about-image img {
+        width: 150px; /* Make image smaller */
+        height: 150px; /* Set height to keep it circular */
+        border-radius: 50%; /* Make image circular */
+        object-fit: cover; /* Ensure the image fills the circular shape */
+    }
+    .about-text {
+        text-align: center; /* Center text on mobile for better appearance */
+        padding: 20px;
+    }
+}
+
+/* Basic styling for the tools section */
+#Tools {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Container to keep all tools centered */
+.tools-container {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+/* Individual tool styling */
+.tool {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.tool img {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    object-fit: contain; /* Ensures the image scales to fit within the specified dimensions without distortion */
+    margin-bottom: 8px;
+}
+
+/* Tool name styling */
+.tool-name {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
 }
