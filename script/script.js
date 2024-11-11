@@ -37,3 +37,6 @@ toggleButton.addEventListener('click', () => {
     toggleButton.classList.add('btn-light');
   }
 });
+
+
+// Add glow effect to social icons on hover

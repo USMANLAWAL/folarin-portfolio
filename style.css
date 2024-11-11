@@ -2,6 +2,10 @@
 .navbarScroll.navbarDark {
     background-color: black;
 }
+.nav-item{
+    margin-right: px;
+}
+
 .headline-text {
     position: absolute;
     top: 42%;
@@ -161,11 +165,139 @@
 .fab {
     color: #000000;
 }
+
+
+
 /* footer styling */
 #footer {
-    background-color: #808080;
-    text-align: center;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-top: 50px;
+    min-width: 200px;
+}
+
+.contact-me {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.footer-section h4 {
+    color: #ff9800;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #ff9800;
+    font-size: 12.5px;
+    margin-bottom: 15px;
+}
+
+.footer-section p a {
+    color: #f5f4f2;
+    font-size: 12.5px;
+    margin-bottom: 15px;
+}
+
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+/* Social Media Links */
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #bababa;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px; /* Add padding */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+.social-link:hover {
+    color: #ffa726;
+    background-color: rgba(255, 152, 0, 0.1); /* Light background on hover */
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5); /* Soft shadow on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+.social-link i {
+    font-size: 25px;
+    margin-right: 2px;
+}
+
+/* Platform Colors for Icons */
+.linkedin i { color: #0077b5 !important; }
+.dribbble i { color: #ea4c89 !important; }
+.behance i { color: #0057ff !important; }
+.instagram i { color: #e4405f !important; }
+.whatsapp i { color: #25d366 !important; }
+.x i { color: #000000 !important; }
+
+/* Footer Bottom */
+.footer-bottom {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.footer-bottom a {
+    color: #c1c1c1;
+    text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .social-icons {
+        justify-content: left;
+        margin-left: 50px;
+    }
+    
+    .footer-section{
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 body.dark-mode {
     background-color: #000000; /* Dark background */
@@ -304,6 +436,7 @@ body.dark-mode {
     justify-content: center;
     flex-wrap: wrap;
     width: auto;
+    margin: aut;
 }
 
 /* Individual tool styling */
@@ -313,6 +446,7 @@ body.dark-mode {
     flex-direction: column;
     align-items: center;
     width: 100px;
+    margin: 20px;
 }
 
 .tool img {
@@ -328,3 +462,4 @@ body.dark-mode {
     margin-top: 5px;
     text-align: center;
 }
+
