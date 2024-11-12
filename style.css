@@ -93,12 +93,17 @@
     text-align: center;
 }
 
-.card:hover .servicesIcon {
-    color: #008000;
-}
+/* .card:hover .servicesIcon {
+    color: #000280;
+} */
 
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 1px solid orange;
+    color: white;
+    background-color: orange;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5); /* Soft shadow on hover */
+    transform: translateY(-5px); /* Subtle lift effect */
+    transition: all 0.5s ease;
 }
 
 
@@ -137,13 +142,6 @@
 }
 
 
-/* .Aboutme {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
-    padding: 25px;
-    margin: 8px;
-    background-color: #ffffff;
-  }
-   */
   
   .dark-mode .about-content h1 {
     color: #ffffff;
