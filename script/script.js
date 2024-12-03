@@ -37,3 +37,57 @@ toggleButton.addEventListener('click', () => {
     toggleButton.classList.add('btn-light');
   }
 });
+
+
+document.querySelectorAll('.portfolio-nav button').forEach(button => {
+  button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+      const items = document.querySelectorAll('.portfolio-content .project-item');
+
+      items.forEach(item => {
+          if (category === "all" || item.getAttribute('data-category') === category) {
+              item.style.display = "block"; // Show the item
+          } else {
+              item.style.display = "none"; // Hide the item
+          }
+      });
+  });
+});
+// Get all navigation buttons and portfolio items
+const buttons = document.querySelectorAll('.portfolio-nav button');
+const items = document.querySelectorAll('.portfolio-content .project-item');
+
+// Default active category on page load
+const defaultCategory = 'mobile-app';
+setActiveCategory(defaultCategory);
+
+// Add click event listeners to navigation buttons
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        setActiveCategory(category);
+    });
+});
+
+// Function to set the active category
+function setActiveCategory(category) {
+    // Show/hide portfolio items
+    items.forEach(item => {
+        if (item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    // Update active button styling
+    buttons.forEach(button => {
+        if (button.getAttribute('data-category') === category) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+}
+
+

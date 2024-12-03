@@ -140,95 +140,113 @@
         </div>
     </section>
     
-
-    <!-- Projects section-->
-    <section id="Projects">
-        <div class="container mt-3">
-            <h1 class="text-center">Projects</h1>
-            <div class="row"> 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Background-generator</h4>
-                            <p class="app-text">A simple app that allows you to change to the background color of your choice</p>
-                            <div class="text-center">
-                                <a href="https://backgroundcolors.netlify.app/" class="btn btn-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Note App</h4>
-                            <p class="app-text">A plain note app for saving simple text document </p>
-                            <div class="text-center">
-                                <a href="https://usmanlawal.github.io/note-app/" class="btn btn-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Registration page</h4>
-                            <p class="app-text">A Functional registration page with a submit button that processes the form submission</p>
-                            <div class="text-center">
-                                <a href="https://resgister.netlify.app/" class="btn btn-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 mt-4"> 
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/frame.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Revamp Branding</h4>
-                            <p class="app-text">A modern logo design showcasing versatility across products and branding materials.</p>
-                            <div class="text-center">
-                                <a href="https://dribbble.com/shots/25122876-Revamp-Branding-Designing" class="btn btn-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/chat.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Chatterly App UI</h4>
-                            <p class="app-text">A social app for sharing moments and connecting with friends through photos, profiles, and chat</p>
-                            <div class="text-center">
-                                <a href="https://www.behance.net/gallery/211460381/Chatterly-Mobile-Chat-Application" class="btn btn-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/Cover.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Mobile Music Application</h4>
-                            <p class="app-text">Your personalized music experience with curated playlists and genre categories.</p>
-                            <div class="text-center">
-                                <a href="https://dribbble.com/shots/25095451-Iplus-Mobile-Music-App" class="btn btn-success">View</a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="portfolio">
+        <nav class="portfolio-nav">
+            <button data-category="mobile-app">Mobile App Design</button>
+            <button data-category="logo">Logo</button>
+            <button data-category="web-design">Web Design</button>
+        </nav>
+    
+        <div class="portfolio-content">
+            <!-- Mobile App Section -->
+            <div class="project-item" data-category="mobile-app">
+                <img src="images/Cover.jpg" alt="Mobile App 1">
+                <div class="overlay">
+                    <span>Iplus Mobile Music App</span>
+                    <span class="link-icon" onclick="window.open('https://www.behance.net/gallery/211265875/Mobile-Music-App-UIUX-design', '_blank');">
+                        <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    
                 </div>
             </div>
-            <br>
+            <div class="project-item" data-category="mobile-app">
+                <img src="images/slant.png" alt="Mobile App 2">
+                <div class="overlay">
+                    <span>Subscription Management App Design (Subsync.app)</span>
+                    <span class="link-icon" onclick="window.open('https://www.behance.net/gallery/213624125/Subscription-Management-App-Design-(Subsyncapp)', '_blank');">
+                        <i class="fas fa-external-link-alt"></i>
                 </div>
             </div>
-    </section>
+
+            <div class="project-item" data-category="mobile-app">
+                <img src="images/cart.png" alt="Mobile App 2">
+                <div class="overlay">
+                    <span>Luxe Shopping App UI Concept</span>
+                    <span class="link-icon" onclick="window.open('https://dribbble.com/shots/25281024-Luxe-Shopping-App-UI-Concept', '_blank');">
+                        <i class="fas fa-external-link-alt"></i>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="mobile-app">
+                <img src="images/chat.png" alt="Mobile App 2">
+                <div class="overlay">
+                    <span>Chatterly Social Media Mobile app</span>
+                    <span class="link-icon" onclick="window.open('https://dribbble.com/shots/24923952-Social-Media-Mobile-app', '_blank');">
+                        <i class="fas fa-external-link-alt"></i>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="mobile-app">
+                <img src="images/Cover.jpg" alt="Mobile App 2">
+                <div class="overlay">
+                    <span>Chatterly Social Media Mobile app</span>
+                    <span class="link-icon" onclick="window.open('https://dribbble.com/shots/24923952-Social-Media-Mobile-app', '_blank');">
+                        <i class="fas fa-external-link-alt"></i>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="mobile-app">
+                <img src="images/Cover.jpg" alt="Mobile App 2">
+                <div class="overlay">
+                    <span>Another Mobile App</span>
+                    <span class="link-icon"><i class="fas fa-external-link-alt"></i></span>
+                </div>
+            </div>
+    
+            <!-- Logo Section -->
+            <div class="project-item" data-category="logo">
+                <img src="images/logo1.jpg" alt="Logo 1">
+                <div class="overlay">
+                    <span>Logo Design</span>
+                    <span class="link-icon"><i class="fas fa-external-link-alt"></i></span>
+                </div>
+            </div>
+            <div class="project-item" data-category="logo">
+                <img src="images/logo2.jpg" alt="Logo 2">
+                <div class="overlay">
+                    <span>Another Logo</span>
+                    <span class="link-icon"><i class="fas fa-external-link-alt"></i></span>
+                </div>
+            </div>
+    
+            <!-- Web Design Section -->
+            <div class="project-item" data-category="web-design">
+                <img src="images/web1.jpg" alt="Web Design 1">
+                <div class="overlay">
+                    <span>Web Design</span>
+                    <span class="link-icon"><i class="fas fa-external-link-alt"></i></span>
+                </div>
+            </div>
+            <div class="project-item" data-category="web-design">
+                <img src="images/web2.jpg" alt="Web Design 2">
+                <div class="overlay">
+                    <span>Another Web Design</span>
+                    <span class="link-icon"><i class="fas fa-external-link-alt"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    
+   
 
     <!-- Tools section -->
     <section id="Tools">
@@ -290,12 +308,12 @@
         <div class="footer-section follow-me">
             <h4>Follow Me</h4>
             <div class="social-icons">
-                <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                <a href="#" class="social-link dribbble"><i class="fab fa-dribbble"></i>Dribbble</a>
-                <a href="#" class="social-link behance"><i class="fab fa-behance"></i>Behance</a>
-                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i>Instagram</a>
-                <a href="#" class="social-link whatsapp"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-                <a href="#" class="social-link x"><i class="fab fa-x-twitter"></i>X</a>
+                <a href="https://www.linkedin.com/in/usman-lawal-936b91335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="https://dribbble.com/folarin45" class="social-link dribbble"><i class="fab fa-dribbble"></i>Dribbble</a>
+                <a href="https://www.behance.net/usmanlawal8" class="social-link behance"><i class="fab fa-behance"></i>Behance</a>
+                <a href="https://www.instagram.com/fola_3dits/profilecard/?igsh=MWt3cTFpdnh3amNqZQ==" class="social-link instagram"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://wa.link/utrgvr" class="social-link whatsapp"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                <a href="https://x.com/Folarinlawal5" class="social-link x"><i class="fab fa-x-twitter"></i>X</a>
             </div>
         </div>
     </div>

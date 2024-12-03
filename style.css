@@ -460,4 +460,179 @@ body.dark-mode {
     margin-top: 5px;
     text-align: center;
 }
+/* profolio section */
+/* Basic Styling (unchanged) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.portfolio {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
 
+
+
+
+/* 
+.portfolio-nav button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-nav button:hover {
+    background-color: #ddd;
+}
+
+.portfolio-nav button.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-nav button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #ffa726;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.portfolio-nav button:hover {
+    background: darkorange;
+}
+
+.portfolio-nav button.active {
+    background-color: darkorange;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dark-mode .portfolio-nav button:hover {
+    border: 0.5px solid darkorange;
+    background-color: black;
+    color: darkorange;
+}
+
+.dark-mode .portfolio-nav button {
+    border: 0.5px solid rgb(255, 255, 255);
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode .portfolio-nav button.active {
+    background-color: darkorange;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Grid Styling */
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible row layout */
+    gap: 20px; /* Spacing between items */
+    padding: 30px;
+  }
+  
+  .project-item {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.257), rgba(0, 0, 0, 0.856));
+    display: flex;
+    flex-direction: column; /* Stack text and icon vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+  
+  .project-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay span {
+    color: white;
+    font-size: 16px; /* Adjust font size for the text */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    transform: translateY(30px); /* Start outside the overlay */
+    margin-bottom: 10px; /* Add spacing between text and icon */
+}
+  
+  .project-item:hover .overlay span {
+    transform: scale(1);
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .overlay .link-icon {
+    font-size: 32px; /* Increase the size of the icon */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(30px); /* Start off-screen */
+    cursor: pointer;
+}
+.project-item:hover .overlay .link-icon {
+    opacity: 1; /* Make the icon visible on hover */
+    transform: translateY(0); /* Slide into view */
+}
+
+.overlay .link-icon i:hover {
+    transform: scale(1.4); /* Make the icon bigger on hover */
+    transition: transform 0.3s ease;
+}
+
+
+
+  
