@@ -474,82 +474,53 @@ body {
 }
 
 
-
-
-/* 
 .portfolio-nav button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    background-color: #f0f0f0;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.portfolio-nav button:hover {
-    background-color: #ddd;
-}
-
-.portfolio-nav button.active {
-    background-color: #333;
-    color: #fff;
-    font-weight: bold;
-}
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.portfolio-nav button {
-    margin: 10px;
+    margin: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    gap: 20px;
     padding: 12px 24px;
     font-size: 16px;
-    background: #ffa726;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .portfolio-nav button:hover {
-    background: darkorange;
+    color: orange;
+    border: 1px solid orange;
+    transition: all 0.5s ease;
 }
 
 .portfolio-nav button.active {
-    background-color: darkorange;
+    background-color: orange;
     color: #fff;
     font-weight: bold;
+    border: 0;
 }
 
 .dark-mode .portfolio-nav button:hover {
-    border: 0.5px solid darkorange;
+    border: 1px solid orange;
     background-color: black;
-    color: darkorange;
+    color: orange;
+    transition: all 0.5s ease;
 }
 
 .dark-mode .portfolio-nav button {
-    border: 0.5px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     background-color: black;
     color: rgb(255, 255, 255);
 }
 
 .dark-mode .portfolio-nav button.active {
-    background-color: darkorange;
+    background-color: orange;
     color: #fff;
     font-weight: bold;
+    border: 0;
 }
 
 
@@ -634,5 +605,53 @@ body {
 }
 
 
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 10px;
+    }
+
+    .portfolio-nav button {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size for small screens */
+        gap: 10px; /* Reduce gap size */
+    }
+
+    .project-item img {
+        height: 200px; /* Adjust image height for better fit */
+    }
+
+    .overlay span {
+        font-size: 14px; /* Smaller text on overlay */
+    }
+
+    .overlay .link-icon {
+        font-size: 24px; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-nav button {
+        font-size: 8px;
+        padding: 4px 10px;
+    }
+
+    .project-item img {
+        height: 250px; /* Further reduce image height */
+    }
+
+    .overlay span {
+        font-size: 12px; /* Smaller text */
+    }
+
+    .overlay .link-icon {
+        font-size: 20px;
+    }
+}
 
   
