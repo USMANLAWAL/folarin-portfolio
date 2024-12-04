@@ -637,7 +637,7 @@ body {
 
 @media (max-width: 480px) {
     .portfolio-nav button {
-        font-size: 8px;
+        font-size: 10px;
         padding: 4px 10px;
     }
 
