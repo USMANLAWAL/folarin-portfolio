@@ -91,3 +91,26 @@ function setActiveCategory(category) {
 }
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible"); // Add the class when the section is in view
+          } else {
+            entry.target.classList.remove("visible"); // Remove the class when out of view
+          }
+        });
+      },
+      {
+        threshold: 0.2, // Adjust as needed; 0.2 means 20% of the section in view
+      }
+    );
+  
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  });
+  
