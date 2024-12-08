@@ -321,10 +321,10 @@ body.dark-mode {
 }
 
 .about-image img {
-    width: 700px;
+    width: 500px;
     height: 500px;
     margin-top: 50px;
-    max-width: 300px; /* Adjust size as needed */
+    max-width: 350px; /* Adjust size as needed */
     border-radius: 8px; /* Adds a bit of rounded corners */
 }
 
